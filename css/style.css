@@ -1,0 +1,360 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	box-sizing: border-box;
+	background-image: url('../img/slide3.png') !important;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+
+/* ------Designer Scrollbar----------- */
+body::-webkit-scrollbar
+{
+  width: 12px;
+}
+body::-webkit-scrollbar-track
+{
+  background-color: #212529;
+}
+body::-webkit-scrollbar-thumb
+{
+  background-color:#686c71;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.side_menu::-webkit-scrollbar
+{
+	width: 8px;
+}
+.side_menu::-webkit-scrollbar-track
+{
+  background-color: #212529;
+}
+.side_menu::-webkit-scrollbar-thumb
+{
+  background-color:#686c71;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* --------------------------------------- */
+
+ .text_style
+ {
+ 	font-size: xxx-large !important;
+ 	color: rgba(255,87,34,0.36);
+ 	font-family: fantasy;
+    letter-spacing: 8px;
+
+ }
+
+ /* ----------sidemenu----------- */
+ .side_menu
+ {
+ 	width: 100px;
+ 	position: fixed;
+ 	top: 0px;
+ 	left: 0px;
+ 	bottom: 0px;
+ 	overflow-y: auto;
+ 	background-color: transparent;
+ 	transition: all 0.5s;
+}
+
+@media(max-width:992px)
+{
+	.side_menu
+	{
+		background-color: rgba(0,0,0,0.8) !important;
+		transform: translateX(-100px);
+	}
+	
+}
+
+@media (min-width:992px)
+{
+			.side_menu
+		 {
+		 	
+			transform: translateX(0px) !important;
+			background-color: transparent !important;
+		 	
+		}
+	
+}
+ .side_nav
+ {
+	top: 30px;
+	text-align: center;
+ 	line-height: 50px;
+ 	position: absolute;
+ 	left: 20px;
+ }
+  .social_nav
+  {
+  	top: 410px;
+	text-align: center;
+ 	line-height: 20px;
+ 	position: absolute;
+ 	left: 20px;
+  }
+ .side_nav img , .social_nav img
+ {
+ 	height: 25px;
+ 	width: 25px;
+ }
+ .cnt::after
+ {
+ 	content: "";
+ 	top: 105%;
+   left: 26px;
+    width: 2px;
+    height: 90px;
+    background: #fff;
+    position: absolute;
+    /* background-attachment: fixed; */
+ }
+ .side_nav img:hover 
+ {
+ 	transform:translateY(-10px) rotateY(360deg) ;
+ 	transition: transform 0.8s ease-in;
+ }
+ .social_nav img:hover 
+ {
+ 	transform:scale(1.5) rotateY(360deg);
+ 	transition: transform 1s ease-in;
+ }
+
+
+ /* --------------navbar---------------- */
+.header
+{
+	background-color: transparent !important;
+	border: 2px solid red;
+	z-index:1;
+}
+.navbar-brand
+{
+	z-index: 1;
+}
+ .navbar-toggler
+ {
+	border: 2px solid #eb0fc8 !important;
+    box-shadow: 0px 0px 3px 1px #eb0fc8;
+	z-index: 2;
+ }
+
+ .menu_icon, .menu_icon_close
+ {
+	color: #eb0fc8 !important;
+	z-index: 2;
+
+ }
+.menu_icon:hover,.menu_icon_close:hover
+{
+	transform: rotate(180deg) !important;
+	transition: transform 0.5s ease-in;
+
+}
+
+
+/* -----------carousel------------- */
+.carousel-indicators li
+{	
+	background-color: transparent !important;
+	width: 15px !important;
+    height: 15px !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    border-radius: 50%;
+    border: 2px solid #eb0fc8 !important;
+    box-shadow: 0px 0px 3px 1px #eb0fc8;
+
+}
+#carousel_banner
+{
+	height: auto;
+	/* background-image: url('../img/slide3.png') !important;
+	background-size: cover;
+	background-position: center center; */
+	padding: 20px 0px;
+	top: 0px;
+	left: 0px ;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+}
+.arrow_icon:hover
+ {
+		
+	color: #35b1ff !important;
+	font-size: 40px;
+}
+
+.img_limitless
+{
+	background-image: url('../img/limit.png') !important;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+   opacity: 0.2;
+    height: 300px;
+}
+.my_btn
+{
+	border: 3px solid #eb0fc8 !important;
+	background-color: transparent;
+	color: white !important;
+	width: 150px;
+	box-shadow: 0px 0px 3px 1px #eb0fc8;
+}
+.my_btn:hover
+{
+	background-color:rgba(0,0,0,0.5);
+	color: white;
+	transition: background-color 1s ease-in; 
+
+}
+.project h2,.card-body h5
+{
+	color: #35b1ff;
+}
+
+
+/* -----------gallery---------------- */
+#gallery
+{
+	height: auto;
+	padding: 50px 0px;
+	/* background-color: white; */
+}
+.gallery_container
+{
+	background-color: rgba(0,0,0,0.7);
+	/* border-radius: 20px; */
+}
+.gallery_img
+{
+	height: 180px;
+	/* border: 3px solid #eb0fc8;
+	box-shadow: 0px 0px 3px 1px #eb0fc8; */
+	padding: 8px;
+	cursor: pointer;
+	box-shadow: 1px 1px 10px 0px purple;
+	object-fit: cover !important;
+	object-position: center !important;
+	
+}
+figcaption
+{
+	background-color: rgba(0,0,0,0.1) !important;
+}
+.my_img_btn
+{
+	border: 3px solid #eb0fc8 !important;
+	background-color: transparent;
+	color: white !important;
+	box-shadow: 0px 0px 3px 1px #eb0fc8;
+	margin-top: 2rem;
+}
+
+
+/* -------------store -------------- */
+/* #product
+{
+	height: auto;
+	padding: 30px 0px;
+} */
+.product_container
+{
+	background-color: rgba(0,0,0,0.7);
+}
+.card_pro
+{
+	background-color: transparent !important;
+	border: 2px solid grey  !important;
+}
+.card_pro img
+{
+	object-fit: cover;
+	object-position: center;
+}
+
+
+/* --------------contactUs------------ */
+
+.contact_container
+{
+	background-color: rgba(0,0,0,0.7);
+}
+.contact_form
+{
+	border: 1px solid #eb0fc84d;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px 0px purple;
+}
+.contact_form label
+{
+	color: white;
+	font-weight: bold;
+}
+.contact_form input,.contact_form textarea
+{
+	background-color: transparent;
+	border-radius: 30px;
+	border: 1px solid #35b1ff;
+	color: #35b1ff !important;
+}
+
+.contact_form input:focus,.contact_form textarea:focus
+{
+	background-color:transparent;
+	caret-color:#35b1ff;
+
+}
+
+
+/* ------------footer--------- */
+.footer
+{
+	height: auto;
+	padding: 15px 0px;
+	background-color: rgba(0,0,0,0.8);
+}
+.back-to-top{
+
+ position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  /* border-radius: 50px; */
+  border: 1px solid #eb0fc8 !important;
+  right: 15px;
+  bottom: 15px;
+  background: transparent;
+  box-shadow: 0px 0px 4px 1px #eb0fc8;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+    
+
+}
+.back-to-top i
+{
+	bottom: 8px;
+	left: 8px;
+	position: absolute;
+	font-size: 24px;
+	color: #eb0fc8;
+}
