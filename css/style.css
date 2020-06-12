@@ -218,6 +218,14 @@ body::-webkit-scrollbar-thumb
 	width: 150px;
 	box-shadow: 0px 0px 3px 1px #eb0fc8;
 }
+.pro_btn
+{
+	border: 3px solid #eb0fc8 !important;
+	background-color: transparent;
+	color: white !important;
+	width: auto;
+	box-shadow: 0px 0px 3px 1px #eb0fc8;
+}
 .my_btn:hover
 {
 	background-color:rgba(0,0,0,0.5);
@@ -299,20 +307,27 @@ figcaption
 }
 .contact_form
 {
-	border: 1px solid #eb0fc84d;
-	padding: 15px;
+	border: 1px solid #35b1ff7a;
+	padding: 25px 15px;
 	border-radius: 10px;
-	box-shadow: 1px 1px 10px 0px purple;
+	box-shadow: 1px 1px 10px 0px #35b1ff;
 }
 .contact_form label
 {
 	color: white;
 	font-weight: bold;
 }
-.contact_form input,.contact_form textarea
+.contact_form input
 {
 	background-color: transparent;
 	border-radius: 30px;
+	border: 1px solid #35b1ff;
+	color: #35b1ff !important;
+}
+.contact_form textarea
+{
+	background-color: transparent;
+	border-radius: 15px;
 	border: 1px solid #35b1ff;
 	color: #35b1ff !important;
 }
