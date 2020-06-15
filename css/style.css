@@ -259,9 +259,12 @@ body::-webkit-scrollbar-thumb
 	padding: 8px;
 	cursor: pointer;
 	box-shadow: 1px 1px 10px 0px purple;
+
+}
+.gallery_img img
+{
 	object-fit: cover !important;
 	object-position: center !important;
-	
 }
 figcaption
 {
